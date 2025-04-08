@@ -1,0 +1,5 @@
+tar -cfz zipped.tar f1 f2 f3
+tar -cvf zip2.tat a1 a2 a3
+tar xvf zip2.tar
+tar cvfj zip3.tb2 a1 a3 a4
+
