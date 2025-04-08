@@ -1,0 +1,7 @@
+101,John Doe,Manager,50000
+102,Alice Smith,Developer,60000
+103,Bob Brown,Designer,55000
+104,Charlie Johnson,Analyst,52000
+105,David White,Developer,62000
+106,Eve Black,Manager,70000
+

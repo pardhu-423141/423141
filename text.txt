@@ -1,0 +1,5 @@
+Hello world! This is a simple text file.
+It contains multiple lines.
+Some words are repeated, repeated multiple times.
+This is a great way to test text processing.
+

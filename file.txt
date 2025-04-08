@@ -1,0 +1,6 @@
+The quick brown fox jumps over the lazy dog.
+A journey of a thousand miles begins with a single step.
+Hello world! This is a simple test file.
+Sed and awk are powerful text-processing tools.
+Regular expressions are very useful in scripting.
+This file contains multiple lines for testing purposes.TODO

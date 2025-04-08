@@ -1,0 +1,68 @@
+1.Given a log file with the format:
+[Timestamp] [Log Level] [Module] [Message]. 
+Write an awk command to extract only ERROR messages along with their timestamps.
+
+command : awk “/\[ERROR\]/ {print $1 $2 $4}”
+
+2.Given a CSV file with tab-separated values. 
+ID    Math    Science    English
+1     78      85        90
+2     82      80        88
+3     75      92        95
+Write an awk script to compute the average of each subject.
+code:
+BEGIN {
+    FS= "\t"
+    print "Subject  Average"
+}
+NR>1 {
+    math+=$2
+    science+=$3
+    english+=$4
+    count++
+}
+END {
+    math_avg=math/count
+    science_avg=science/count
+    english_avg=english/count
+    
+    printf "Maths\t%.2f\n",math_avg
+    printf "Science\t%.2f\n",science_avg
+    printf "English\t%.2f\n",english_avg
+}
+
+run command:
+awk -f avg.awk st.scv
+
+
+
+3.Given a server log with IP addresses:
+192.168.1.1 - - [17/Feb/2025:12:00:01] "GET /index.html"
+192.168.1.2 - - [17/Feb/2025:12:05:23] "POST /login"
+192.168.1.1 - - [17/Feb/2025:12:10:45] "GET /dashboard"
+Write an awk script to count occurrences of each IP.
+code:
+{
+  ip_counts[$1]++;
+}
+
+END {
+  print "IP Address\tCount"
+  for (ip in ip_counts) {
+	print ip, "\t", ip_counts[ip]
+  }
+}
+
+4.Given lines of text:
+apple banana cherry
+dog cat elephant
+Write a sed command to swap the first and last words.
+
+command : sed 's/\(\S*\) \(.*\) \(\S*\)/\3 \2 \1/' swap.txt
+
+5.Given a file with duplicate words:
+hello hello worldthis is is a test test
+Write a sed command to remove consecutive duplicate words.
+
+command : sed -E 's/\b(\w+)\b\s+\b\1\b/\1/g' input.txt
+
