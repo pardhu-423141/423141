@@ -1,0 +1,35 @@
+1. Obtain the following results
+(i) To print the name of operating system
+uname
+
+(ii) To print the login name
+logname
+
+(iii) To print the host name
+/usr/bin/hostname
+
+2. Display the calendar for
+(i) Jan 2024
+cal 01 2024
+
+(ii) Feb 1995
+cal 02 1995 
+
+(iii) 9 th month of the year 7 A.D
+cal 09 7
+
+(iv) For the current month
+cal
+
+(v) Current Date Day Abbreviation , Month Abbreviation along with year
+date +"%A %B %Y"
+
+3. Display the time in 12-Hour and 24 Hour Notations.
+date +"%r"
+date +"%T"
+
+4. Display the Current Date and Current Time.
+date
+
+5. Display the message “GOOD MORNING” in enlarged characters.
+banner GOOD MORNING

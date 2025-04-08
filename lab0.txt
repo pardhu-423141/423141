@@ -1,0 +1,5 @@
+mkdir Desktop/423141
+mkdir Desktop/423141/subdir
+cd Desktop/423141/subdir
+cal
+ls ..
